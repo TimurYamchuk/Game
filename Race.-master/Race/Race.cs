@@ -38,14 +38,13 @@
             Console.WriteLine("          Гонка началась!          ");
             Console.WriteLine("=====================================");
 
-            // Двигаем и отображаем все машины
             foreach (var car in cars)
             {
                 car.Drive();
-                car.Render(); // Отображение машины в новой позиции
+                car.Render(); 
             }
 
-            Thread.Sleep(200); // Задержка, чтобы анимация была видна
+            Thread.Sleep(200); 
         }
     }
 
