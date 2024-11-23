@@ -4,12 +4,12 @@
 
     public override void AdjustSpeed()
     {
-        Speed = random.Next(25, 80); // Автобус имеет среднюю скорость
+        Speed = random.Next(25, 80); 
     }
 
     public override void Render()
     {
-        int carPosition = (int)(Position / FinishDistance * 50);  // Машина двигается по экрану
+        int carPosition = (int)(Position / FinishDistance * 50);  
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine($"{new string(' ', carPosition)}[B] #{Number} ({Name})");
         Console.ResetColor();
